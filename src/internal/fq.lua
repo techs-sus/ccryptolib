@@ -1,8 +1,8 @@
 --- Arithmetic on Curve25519's scalar field.
 
-local mp = require "ccryptolib.internal.mp"
-local util = require "ccryptolib.internal.util"
-local packing = require "ccryptolib.internal.packing"
+local mp = require "./mp"
+local util = require "./util"
+local packing = require "./packing"
 
 local unpack = unpack or table.unpack
 local pfq, fmtfq = packing.compilePack("<I3I3I3I3I3I3I3I3I3I3I2")

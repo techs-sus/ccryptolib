@@ -1,10 +1,10 @@
-local expect = require "internal.expect".expect
-local lassert = require "ccryptolib.internal.util".lassert
-local fq     = require "ccryptolib.internal.fq"
-local fp     = require "ccryptolib.internal.fp"
-local c25    = require "ccryptolib.internal.curve25519"
-local sha512 = require "ccryptolib.internal.sha512"
-local random = require "ccryptolib.random"
+local expect = require "./internal/expect".expect
+local lassert = require "./internal/util".lassert
+local fq     = require "./internal/fq"
+local fp     = require "./internal/fp"
+local c25    = require "./internal/curve25519"
+local sha512 = require "./internal/sha512"
+local random = require "./random"
 
 --- Masks an exchange secret key.
 --- @param sk string A random 32-byte Curve25519 secret key.

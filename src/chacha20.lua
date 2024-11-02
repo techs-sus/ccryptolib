@@ -1,8 +1,8 @@
 --- The ChaCha20 stream cipher.
 
-local expect  = require "internal.expect".expect
-local lassert = require "ccryptolib.internal.util".lassert
-local packing = require "ccryptolib.internal.packing"
+local expect  = require "./internal/expect".expect
+local lassert = require "./internal/util".lassert
+local packing = require "./internal/packing"
 
 local bxor = bit32.bxor
 local rol = bit32.lrotate

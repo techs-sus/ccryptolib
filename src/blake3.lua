@@ -1,8 +1,8 @@
 --- The BLAKE3 cryptographic hash function.
 
-local expect = require "internal.expect".expect
-local lassert = require "ccryptolib.internal.util".lassert
-local packing = require "ccryptolib.internal.packing"
+local expect = require "./internal/expect".expect
+local lassert = require "./internal/util".lassert
+local packing = require "./internal/packing"
 
 local unpack = unpack or table.unpack
 local bxor = bit32.bxor

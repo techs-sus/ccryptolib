@@ -5,11 +5,11 @@
 		"excludes": [],
 		"require_mode": {
 			"name": "path",
-			"module_folder_name": "init",
 			"sources": {}
 		}
 	},
 	"rules": [
+		"convert_local_function_to_assign",
 		"remove_comments",
 		"remove_spaces",
 		"remove_types",

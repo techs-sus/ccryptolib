@@ -1,15 +1,15 @@
-local expect   = require "internal.expect".expect
-local blake3   = require "ccryptolib.blake3"
-local chacha20 = require "ccryptolib.chacha20"
-local util     = require "ccryptolib.internal.util"
+local expect   = require "./internal/expect".expect
+local blake3   = require "./blake3"
+local chacha20 = require "./chacha20"
+local util     = require "./internal/util"
 
 local lassert = util.lassert
 
 -- Extract local context.
 local ctx = {
     "ccryptolib 2023-04-11T19:43Z random.lua initialization context",
-    os.epoch("utc"),
-    os.day(),
+    os.time(),
+    elapsedTime(), -- returns the current ingame day? very insecure
     os.time(),
     math.random(0, 2 ^ 24 - 1),
     math.random(0, 2 ^ 24 - 1),

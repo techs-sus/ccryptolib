@@ -1,8 +1,8 @@
 --- General utilities for handling byte strings.
 
-local expect = require "internal.expect".expect
-local random = require "ccryptolib.random"
-local poly1305 = require "ccryptolib.poly1305"
+local expect = require "./internal/expect".expect
+local random = require "./random"
+local poly1305 = require "./poly1305"
 
 --- Returns the hexadecimal version of a string.
 --- @param str string A string.
