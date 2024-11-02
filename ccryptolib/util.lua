@@ -1,6 +1,6 @@
 --- General utilities for handling byte strings.
 
-local expect = require "cc.expect".expect
+local expect = require "internal.expect".expect
 local random = require "ccryptolib.random"
 local poly1305 = require "ccryptolib.poly1305"
 
